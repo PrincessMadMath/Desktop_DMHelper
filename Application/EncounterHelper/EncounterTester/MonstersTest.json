@@ -1,0 +1,42 @@
+﻿[
+    {
+        "name": "Goblin vraiment pas entrepreneur",
+        "description": "Oeil arraché",
+        "hits_points": 20,
+        "ac": 14,
+        "initiative_bonus": -20,
+        "vulnerabilities": [
+            "slashing",
+            "bludgening"
+        ],
+        "attacks": [
+            {
+
+                "name": "sword",
+                "damage_type": "slashing",
+                "damage_roll": "1d8+3"
+            }
+        ]
+    },
+    {
+        "name": "Goblin au chapeau",
+        "description": "Petit chapeau coquet",
+        "hits_points": 20,
+        "ac": 15,
+        "initiative_bonus": 3,
+        "attacks": [
+            {
+                "name": "sword",
+                "damage_type": "slashing",
+                "damage_roll": "1d8+20"
+            },
+            {
+                "name": "bow",
+                "damage_type": "piercing",
+                "damage_roll": "1d100+20"
+            }
+        ]
+
+    }
+]
+

@@ -1,0 +1,15 @@
+﻿[
+    {
+        "name": "Raistlin",
+        "ac": 18,
+        "initiative_bonus": 3,
+        "passive_perception": 15
+    },
+    {
+        "name": "Garret",
+        "ac": 18,
+        "initiative_bonus": 20,
+        "passive_perception": 10
+    }
+]
+
