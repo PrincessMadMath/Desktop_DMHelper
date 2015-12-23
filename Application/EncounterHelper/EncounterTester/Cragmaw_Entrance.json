@@ -1,0 +1,27 @@
+﻿[
+    {
+        "name": "Hobgoblin H1",
+        "initiative_bonus": 1 
+    },
+    {
+        "name": "Hobgoblin H2",
+        "initiative_bonus": 1
+    },
+    {
+        "name": "Goblin D1",
+        "initiative_bonus": 2 
+    },
+    {
+        "name": "Goblin D2",
+        "initiative_bonus": 2
+    },
+        {
+        "name": "Goblin D3",
+        "initiative_bonus": 2 
+    },
+    {
+        "name": "Goblin D4",
+        "initiative_bonus": 2
+    }
+]
+

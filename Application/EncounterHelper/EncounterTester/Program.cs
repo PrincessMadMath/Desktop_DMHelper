@@ -8,7 +8,18 @@ namespace EncounterTester
     {
         static void Main(string[] args)
         {
-            var serializeMonsters = SimpleFileReader.ReadFile("MonstersTest.json");
+            // Goblin Hideout
+            var serializeMonsters = SimpleFileReader.ReadFile("GoblinAmbush.json");
+            //var serializeMonsters = SimpleFileReader.ReadFile("PrisoOtage.json");
+            //var serializeMonsters = SimpleFileReader.ReadFile("Klarg.json");
+
+            // Cragmaw
+            //var serializeMonsters = SimpleFileReader.ReadFile("Cragmaw_Entrance.json");
+            //var serializeMonsters = SimpleFileReader.ReadFile("Chapelle.json");
+            //var serializeMonsters = SimpleFileReader.ReadFile("Owlbear.json");
+            //var serializeMonsters = SimpleFileReader.ReadFile("KingGrol.json");
+            // Wave Echo Cave
+
             var monsters = JsonParserHelper.ParseList<Monster>(serializeMonsters);
 
             var serializePlayers = SimpleFileReader.ReadFile("Players.json");

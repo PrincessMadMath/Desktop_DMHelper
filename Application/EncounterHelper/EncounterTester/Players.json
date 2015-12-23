@@ -1,15 +1,38 @@
 ﻿[
     {
-        "name": "Raistlin",
+        "name": "Mireille",
         "ac": 18,
         "initiative_bonus": 3,
         "passive_perception": 15
     },
     {
-        "name": "Garret",
+        "name": "Tayo",
         "ac": 18,
-        "initiative_bonus": 20,
+        "initiative_bonus": 3,
+        "passive_perception": 10
+    },
+    {
+        "name": "Isa",
+        "ac": 18,
+        "initiative_bonus": 3,
+        "passive_perception": 15
+    },
+    {
+        "name": "MP",
+        "ac": 18,
+        "initiative_bonus": 3,
+        "passive_perception": 10
+    },
+    {
+        "name": "Denis",
+        "ac": 18,
+        "initiative_bonus": 3,
+        "passive_perception": 15
+    },
+    {
+        "name": "Maud",
+        "ac": 18,
+        "initiative_bonus": 3,
         "passive_perception": 10
     }
 ]
-

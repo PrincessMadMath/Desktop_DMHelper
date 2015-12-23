@@ -1,0 +1,23 @@
+﻿[
+    {
+        "name": "Klarg (bugbear)",
+        "initiative_bonus": 4 
+    },
+    {
+        "name": "Timmy (wolf)",
+        "initiative_bonus": 3
+    },
+        {
+        "name": "Goblin C1",
+        "initiative_bonus": 2 
+    },
+    {
+        "name": "Goblin D1",
+        "initiative_bonus": 2
+    },
+        {
+        "name": "Goblin D2",
+        "initiative_bonus": 2 
+    }
+]
+

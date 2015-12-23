@@ -1,0 +1,31 @@
+﻿[
+    {
+        "name": "Yeemik (redbrand leader)",
+        "initiative_bonus": 4 
+    },
+    {
+        "name": "Cape Rouge C1",
+        "initiative_bonus": 2
+    },
+        {
+        "name": "Cape Rouge C2",
+        "initiative_bonus": 2 
+    },
+    {
+        "name": "Cape Rouge C3",
+        "initiative_bonus": 2
+    },
+        {
+        "name": "Cape Rouge C4",
+        "initiative_bonus": 2 
+    },
+    {
+        "name": "Cape Rouge D1",
+        "initiative_bonus": 2
+    },
+    {
+        "name": "Cape Rouge D2",
+        "initiative_bonus": 2
+    }
+]
+

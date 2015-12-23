@@ -1,0 +1,15 @@
+﻿[
+    {
+        "name": "King Grol (bugbear)",
+        "initiative_bonus": 4 
+    },
+    {
+        "name": "Jimmy (wolf)",
+        "initiative_bonus": 3
+    },
+        {
+        "name": "Vyerith",
+        "initiative_bonus": 3 
+    }
+]
+

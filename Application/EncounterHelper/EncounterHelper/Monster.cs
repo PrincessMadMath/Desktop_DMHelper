@@ -53,9 +53,9 @@ namespace EncounterHelper
             var toString = string.Format(
                             "Name: {0}" + "\n" +
                             "AC: {1}" + "\n" + 
-                            "Description: {2}" + "\n" + 
-                            "Hits Points: {3}" + "\n" + 
-                            "Attacks: {4}" + "\n"
+                            //"Description: {2}" + "\n" + 
+                            //"Hits Points: {3}" + "\n" + 
+                            "Attacks: {4}"
                             , Name, AC, Description, HitsPoints, attackCollection);
             return toString;
         }

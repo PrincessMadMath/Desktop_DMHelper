@@ -1,0 +1,19 @@
+﻿[
+    {
+        "name": "Doudou (Grick)",
+        "initiative_bonus": 3 
+    },
+    {
+        "name": "Lhupo (goblin)",
+        "initiative_bonus": 4
+    },
+        {
+        "name": "Goblin C1",
+        "initiative_bonus": 2 
+    },
+    {
+        "name": "Goblin C2",
+        "initiative_bonus": 2
+    }
+]
+
