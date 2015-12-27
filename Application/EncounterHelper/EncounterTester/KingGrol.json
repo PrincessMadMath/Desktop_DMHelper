@@ -1,15 +1,23 @@
 ﻿[
     {
         "name": "King Grol (bugbear)",
-        "initiative_bonus": 4 
+        "initiative_bonus": 3 
     },
     {
         "name": "Jimmy (wolf)",
         "initiative_bonus": 3
     },
-        {
+    {
         "name": "Vyerith",
-        "initiative_bonus": 3 
+        "initiative_bonus": 3
+    },
+    {
+        "name": "Garde Bugbear #1",
+        "initiative_bonus": 0
+    },
+        {
+        "name": "Garde Bugbear 2",
+        "initiative_bonus": 0 
     }
 ]
 

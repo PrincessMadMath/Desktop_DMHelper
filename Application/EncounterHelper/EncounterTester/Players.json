@@ -1,38 +1,32 @@
 ﻿[
     {
-        "name": "Mireille",
+        "name": "Derfick",
         "ac": 18,
-        "initiative_bonus": 3,
-        "passive_perception": 15
+        "initiative_bonus": 0,
+        "passive_perception": 14
     },
     {
-        "name": "Tayo",
-        "ac": 18,
-        "initiative_bonus": 3,
+        "name": "Raistlin",
+        "ac": 14,
+        "initiative_bonus": 2,
         "passive_perception": 10
     },
     {
-        "name": "Isa",
-        "ac": 18,
-        "initiative_bonus": 3,
-        "passive_perception": 15
+        "name": "Finnik",
+        "ac": 14,
+        "initiative_bonus": 4,
+        "passive_perception": 13
     },
     {
-        "name": "MP",
-        "ac": 18,
+        "name": "Vras",
+        "ac": 17,
         "initiative_bonus": 3,
-        "passive_perception": 10
+        "passive_perception": 11
     },
     {
-        "name": "Denis",
-        "ac": 18,
-        "initiative_bonus": 3,
-        "passive_perception": 15
-    },
-    {
-        "name": "Maud",
-        "ac": 18,
-        "initiative_bonus": 3,
-        "passive_perception": 10
+        "name": "Garret",
+        "ac": 15,
+        "initiative_bonus": 4,
+        "passive_perception": 14
     }
 ]
