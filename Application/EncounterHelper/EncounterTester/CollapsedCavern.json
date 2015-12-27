@@ -1,0 +1,18 @@
+﻿[
+  {
+    "name": "Vyrith (dobbleganger)",
+    "initiative_bonus": 4
+  },
+  {
+    "name": "Goblin (dans crevasse) C1",
+    "initiative_bonus": 2
+  },
+  {
+    "name": "Goblin (dans crevasse) C2",
+    "initiative_bonus": 2
+  },
+  {
+    "name": "Goblin C3",
+    "initiative_bonus": 2
+  }
+]

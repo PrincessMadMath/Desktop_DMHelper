@@ -1,0 +1,23 @@
+﻿[
+  {
+    "name": "Flameskull",
+    "initiative_bonus": 4
+  },
+
+  {
+    "name": "Squelette C1",
+    "initiative_bonus": 2
+  },
+  {
+    "name": "Squelette C2",
+    "initiative_bonus": 2
+  },
+  {
+    "name": "Squelette C3",
+    "initiative_bonus": 2
+  },
+  {
+    "name": "Squelette C4",
+    "initiative_bonus": 2
+  }
+]
