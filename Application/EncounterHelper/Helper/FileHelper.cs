@@ -1,11 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Linq.Expressions;
+using System.Linq;
 
 namespace Helper
 {
-    public static class SimpleFileReader
+    public static class FileHelper
     {
+        public static List<string> GetAllFilesInDirectoryAndSubDirectories(string path, string pattern)
+        {
+            String[] allfiles = Directory.GetFiles(path, pattern, System.IO.SearchOption.AllDirectories);
+            return allfiles.ToList();
+        }
+
         public static string ReadFile(string path)
         {
             string text = "";

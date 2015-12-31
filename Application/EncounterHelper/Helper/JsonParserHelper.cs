@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Net;
 using Newtonsoft.Json;
 
 namespace Helper
@@ -9,6 +10,12 @@ namespace Helper
         {
             List<TType> list = JsonConvert.DeserializeObject<List<TType>>(serializeString);
             return list;
-        } 
+        }
+
+        public static TType ParseSingleton<TType>(string serializeString)
+        {
+            TType result = JsonConvert.DeserializeObject<TType>(serializeString);
+            return result;
+        }
     }
 }

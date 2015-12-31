@@ -2,6 +2,6 @@
 {
     public interface IEncounterParticipant
     {
-        int GetInitiative();
+        int Initiative { get; }
     }
 }

@@ -1,0 +1,16 @@
+﻿{
+    "monster_type": "goblin",
+    "description": "goblin",
+    "ac": 15,
+    "initiative_bonus": 2,
+    "hits_points_dice": "d6",
+    "hits_points_dice_count": 2,
+    "attacks": [
+        {
+            "name": "scimar",
+            "damage_type": "Slashing",
+            "damage_roll": "+4 1d6 +2"
+        }
+
+    ]
+}

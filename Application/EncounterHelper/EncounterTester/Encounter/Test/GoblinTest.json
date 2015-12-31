@@ -1,0 +1,11 @@
+﻿[
+    {
+        "name": "Goblin Overiden",
+        "initiative_bonus": 0,
+        "monster_type": "goblin"
+    },
+    {
+        "name": "Classic Goblin",
+        "monster_type": "goblin"
+    }
+]

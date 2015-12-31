@@ -1,46 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace EncounterHelper
 {
     public class Monster : IEncounterParticipant
     {
-        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("description")]
         public string Description { get; set; }
 
-        [JsonProperty("hits_points")]
-        public string HitsPoints { get; set; }
+        public int CurrentHitsPoints { get; set; }
+        public int MaximumHitsPoints { get; set; }
 
-        [JsonProperty("ac")]
         public int AC { get; set; }
 
-        [JsonProperty("initiative_bonus")]
-        public int InitiativeBonus { get; set; }
+        public int Initiative { get; set; }
 
-        [JsonProperty("vulnerabilities", ItemConverterType = typeof(StringEnumConverter))]
         public List<DamageType> Vulnerabilities { get; set; }
 
-        [JsonProperty("resistances", ItemConverterType = typeof(StringEnumConverter))]
-        [JsonConverter(typeof(StringEnumConverter))]
         public List<DamageType> Resistances { get; set; }
 
-        [JsonProperty("immunities", ItemConverterType = typeof(StringEnumConverter))]
-        [JsonConverter(typeof(StringEnumConverter))]
         public List<DamageType> Immunities { get; set; }
 
-        [JsonProperty("attacks")]
         public List<Attack> Attacks { get; set; }
-
-        public int GetInitiative()
-        {
-            return DiceRoller.RollDice(20) + InitiativeBonus;
-        }
 
         public override string ToString()
         {
@@ -52,12 +34,12 @@ namespace EncounterHelper
 
             var toString = string.Format(
                             "Name: {0}" + "\n" +
-                            "AC: {1}" + "\n" + 
-                            //"Description: {2}" + "\n" + 
-                            //"Hits Points: {3}" + "\n" + 
-                            "Attacks: {4}"
-                            , Name, AC, Description, HitsPoints, attackCollection);
+                            "AC: {1}" + "\n" +
+                            "Description: {2}" + "\n" +
+                            "Hits Points: {3}" + "\n"  
+                          //  "Attacks: {4}"
+                            , Name, AC, Description, CurrentHitsPoints, attackCollection);
             return toString;
-        }
+        } 
     }
 }
