@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace EncounterHelper
 {
@@ -10,7 +11,7 @@ namespace EncounterHelper
             var fusion = new List<IEncounterParticipant>();
             fusion.AddRange(monsters);
             fusion.AddRange(players);
-            fusion.Sort((x1, x2) => x2.GetInitiative().CompareTo(x1.GetInitiative()));
+            fusion = fusion.OrderByDescending(x => x.Initiative).ToList();
 
             foreach (var encounterParticipant in fusion)
             {

@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileHelper.cs" />
     <Compile Include="JsonParserHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleFileReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

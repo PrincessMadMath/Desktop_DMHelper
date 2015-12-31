@@ -47,46 +47,52 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Chapelle.json">
+    <None Include="Encounter\LostMines\Chapelle.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="CollapsedCavern.json">
+    <None Include="Encounter\LostMines\CollapsedCavern.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="TempleDomathoin.json">
+    <None Include="Encounter\LostMines\TempleDomathoin.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="NorthBarrack.json">
+    <None Include="Encounter\LostMines\NorthBarrack.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="KingGrol.json">
+    <None Include="Encounter\LostMines\KingGrol.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="ForgeOfSpell.json">
+    <None Include="Encounter\LostMines\ForgeOfSpell.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Klarg.json">
+    <None Include="Encounter\LostMines\Klarg.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Cragmaw_Entrance.json">
+    <None Include="Encounter\LostMines\Cragmaw_Entrance.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="MineTunnel.json">
+    <None Include="Encounter\LostMines\MineTunnel.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="WizardQuarter.json">
+    <None Include="Encounter\LostMines\WizardQuarter.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Owlbear.json">
+    <None Include="Encounter\LostMines\Owlbear.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="PriseOtage.json">
+    <None Include="Encounter\LostMines\PriseOtage.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Players.json">
+    <None Include="Encounter\Test\GoblinTest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="GoblinAmbush.json">
+    <None Include="MonsterRepository\Goblin.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Player\Players.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Encounter\LostMines\GoblinAmbush.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -100,6 +106,7 @@
       <Name>Helper</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -45,15 +45,28 @@
   <ItemGroup>
     <Compile Include="Attack.cs" />
     <Compile Include="DamageType.cs" />
+    <Compile Include="Dice.cs" />
     <Compile Include="DiceRoller.cs" />
+    <Compile Include="EncounterFactory.cs" />
     <Compile Include="EncounterSimulator.cs" />
     <Compile Include="IEncounterParticipant.cs" />
     <Compile Include="Monster.cs" />
+    <Compile Include="MonsterBuilder.cs" />
+    <Compile Include="MonsterFactory.cs" />
+    <Compile Include="MonsterRepository.cs" />
     <Compile Include="PlayableCharacter.cs" />
+    <Compile Include="PlayableCharacterBuilder.cs" />
+    <Compile Include="PlayerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{08A71BA5-C862-46D5-9EF8-ABD9571C9242}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
