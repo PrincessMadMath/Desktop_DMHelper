@@ -16,13 +16,13 @@ namespace EncounterTester
             // Cragmaw
             //var serializeMonsters = SimpleFileReader.ReadFile("Cragmaw_Entrance.json");
             //var serializeMonsters = SimpleFileReader.ReadFile("Chapelle.json");
-            var serializeMonsters = SimpleFileReader.ReadFile("Owlbear.json");
+            //var serializeMonsters = SimpleFileReader.ReadFile("Owlbear.json");
             //var serializeMonsters = SimpleFileReader.ReadFile("KingGrol.json");
 
             // Wave Echo Cave
             //var serializeMonsters = SimpleFileReader.ReadFile("MineTunnel.json");
             //var serializeMonsters = SimpleFileReader.ReadFile("WizardQuarter.json");
-            //var serializeMonsters = SimpleFileReader.ReadFile("ForgeOfSpell.json");
+            var serializeMonsters = SimpleFileReader.ReadFile("ForgeOfSpell.json");
             //var serializeMonsters = SimpleFileReader.ReadFile("NorthBarrack.json");
             //var serializeMonsters = SimpleFileReader.ReadFile("CollapsedCavern.json");
             //var serializeMonsters = SimpleFileReader.ReadFile("TempleDomathoin.json");

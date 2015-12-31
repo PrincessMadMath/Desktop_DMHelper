@@ -6,18 +6,38 @@
 
   {
     "name": "Squelette C1",
-    "initiative_bonus": 2
+    "initiative_bonus": 1
   },
   {
     "name": "Squelette C2",
-    "initiative_bonus": 2
+    "initiative_bonus": 1
   },
   {
     "name": "Squelette C3",
-    "initiative_bonus": 2
+    "initiative_bonus": 1
   },
   {
     "name": "Squelette C4",
-    "initiative_bonus": 2
+    "initiative_bonus": 0
+  },
+  {
+    "name": "Squelette C5",
+    "initiative_bonus": 0
+  },
+  {
+    "name": "Squelette C6",
+    "initiative_bonus": 0
+  },
+  {
+    "name": "Squelette C7",
+    "initiative_bonus": 0
+  },
+  {
+    "name": "Squelette C8",
+    "initiative_bonus": 0
+  },
+  {
+    "name": "Squelette C9",
+    "initiative_bonus": 0
   }
 ]
