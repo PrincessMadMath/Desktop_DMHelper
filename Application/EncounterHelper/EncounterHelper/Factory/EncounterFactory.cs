@@ -1,22 +1,26 @@
 ﻿using System.Collections.Generic;
+using DmHelperGui.ModelView;
 using Helper;
 
 namespace EncounterHelper
 {
     public static class EncounterFactory
     {
-        public static void CreateEncounter(string encounterPath, string playerPath)
+        public static EncounterSimulation CreateEncounter(EncounterInfoStarter info)
         {
-            // Goblin Hideout
+            return CreateEncounter(info.EncounterPath, info.PartyPath);
+        }
+
+        public static EncounterSimulation CreateEncounter(string encounterPath, string playerPath)
+        {
             var serializeMonsters = FileHelper.ReadFile(encounterPath);
             var monsterBuilders = JsonParserHelper.ParseList<MonsterBuilder>(serializeMonsters);
-            
+
             List<Monster> monsters = new List<Monster>();
             foreach (var monsterBuilder in monsterBuilders)
             {
                 monsters.Add(MonsterFactory.CreateMonster(monsterBuilder));
             }
-
 
             var serializePlayers = FileHelper.ReadFile(playerPath);
             var playerBuilders = JsonParserHelper.ParseList<PlayableCharacterBuilder>(serializePlayers);
@@ -27,7 +31,7 @@ namespace EncounterHelper
                 players.Add(PlayerFactory.CreateCharacter(playerBuilder));
             }
 
-            EncounterSimulator.SimulateEncounter(monsters, players);
+            return EncounterSimulator.SimulateEncounter(monsters, players);
         }
     }
 }

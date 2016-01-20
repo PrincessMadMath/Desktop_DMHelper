@@ -43,21 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attack.cs" />
-    <Compile Include="DamageType.cs" />
-    <Compile Include="Dice.cs" />
-    <Compile Include="DiceRoller.cs" />
-    <Compile Include="EncounterFactory.cs" />
-    <Compile Include="EncounterSimulator.cs" />
-    <Compile Include="IEncounterParticipant.cs" />
-    <Compile Include="Monster.cs" />
-    <Compile Include="MonsterBuilder.cs" />
-    <Compile Include="MonsterFactory.cs" />
-    <Compile Include="MonsterRepository.cs" />
-    <Compile Include="PlayableCharacter.cs" />
-    <Compile Include="PlayableCharacterBuilder.cs" />
-    <Compile Include="PlayerFactory.cs" />
+    <Compile Include="Model\Attack.cs" />
+    <Compile Include="Model\DamageType.cs" />
+    <Compile Include="Model\Dice.cs" />
+    <Compile Include="Utils\DiceRoller.cs" />
+    <Compile Include="Factory\EncounterFactory.cs" />
+    <Compile Include="Simulator\EncounterSimulator.cs" />
+    <Compile Include="Model\IEncounterParticipant.cs" />
+    <Compile Include="Model\Monster.cs" />
+    <Compile Include="Factory\MonsterBuilder.cs" />
+    <Compile Include="Factory\MonsterFactory.cs" />
+    <Compile Include="Simulator\MonsterRepository.cs" />
+    <Compile Include="Model\PlayableCharacter.cs" />
+    <Compile Include="Factory\PlayableCharacterBuilder.cs" />
+    <Compile Include="Factory\PlayerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\EncounterInfoStarter.cs" />
+    <Compile Include="ViewModel\EncounterSimulation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
