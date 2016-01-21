@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewLogic\EncounterManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,8 +67,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Panels\EncounterSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\MonsterRepoLoader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Panels\EncounterSelector.xaml.cs">
+      <DependentUpon>EncounterSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\MonsterRepoLoader.xaml.cs">
+      <DependentUpon>MonsterRepoLoader.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -99,6 +114,10 @@
     <ProjectReference Include="..\EncounterHelper\EncounterHelper.csproj">
       <Project>{706FE8E5-A697-4ADF-8E64-312855F10D98}</Project>
       <Name>EncounterHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{08a71ba5-c862-46d5-9ef8-abd9571c9242}</Project>
+      <Name>Helper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

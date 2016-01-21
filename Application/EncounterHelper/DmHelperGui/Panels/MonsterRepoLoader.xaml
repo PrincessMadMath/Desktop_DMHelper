@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DmHelperGui.Panels.MonsterRepoLoader"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="75" d:DesignWidth="300">
+    <Grid>
+        <StackPanel >
+        <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal"  Margin="0,0,0,10">
+            <Button x:Name="btnOpenMonsterRepo" Click="btnOpenMonsterRepo_Click" Content="Choose Monster Repo"/>
+            <TextBlock x:Name="txtMonsterRepo" Margin="10,0,0,0"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="btnLoadMonsterRepo" Click="btnLoadMonster_Click" Content="Load Monster Repo"/>
+            <TextBlock x:Name="txtStatus" Margin="10,0,0,0"><Run Text="Not loaded"/></TextBlock>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
