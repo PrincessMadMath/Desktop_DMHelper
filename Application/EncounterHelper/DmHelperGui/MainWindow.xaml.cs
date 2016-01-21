@@ -16,6 +16,7 @@ using DmHelperGui.ModelView;
 using EncounterHelper;
 using Microsoft.Win32;
 using System.IO;
+using DmHelperGui.Properties;
 using Path = System.IO.Path;
 
 namespace DmHelperGui
@@ -40,7 +41,7 @@ namespace DmHelperGui
             if (fileInFolder != null)
             {
                 _folderToLoad = Path.GetDirectoryName(fileInFolder);
-                txtMonsterRepo.Text = _folderToLoad;
+                txtMonsterRepo.Text = _folderToLoad.Split('\\').Last();
             }
         }
 

@@ -36,8 +36,8 @@ namespace EncounterHelper
                             "Name: {0}" + "\n" +
                             "AC: {1}" + "\n" +
                             "Description: {2}" + "\n" +
-                            "Hits Points: {3}" + "\n"  
-                          //  "Attacks: {4}"
+                            "Hits Points: {3}" + "\n" + 
+                            "Attacks: {4}"
                             , Name, AC, Description, CurrentHitsPoints, attackCollection);
             return toString;
         } 

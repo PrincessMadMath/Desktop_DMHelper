@@ -13,20 +13,20 @@
             </Grid>
 
         </StackPanel>
-        <StackPanel>
-            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,10">
-                <Button Name="btnOpenMonsterRepo" Click="btnOpenMonsterRepo_Click">Choose Monster Repo</Button>
-                <TextBlock Name="txtMonsterRepo" Margin="10,0,0,0"></TextBlock>
+        <StackPanel DockPanel.Dock="Top">
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal"  Margin="0,0,0,10">
+                <Button x:Name="btnOpenMonsterRepo" Click="btnOpenMonsterRepo_Click" Content="Choose Monster Repo"/>
+                <TextBlock x:Name="txtMonsterRepo" Margin="10,0,0,0"/>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Center" DockPanel.Dock="Top" Orientation="Horizontal" Margin="0,0,0,10">
-                <Button Name="btnLoadMonsterRepo" Click="btnLoadMonster_Click">Load Monster Repo</Button>
-                <TextBlock Name="txtStatus" Margin="10,0,0,0">Not loaded</TextBlock>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,10">
+                <Button x:Name="btnLoadMonsterRepo" Click="btnLoadMonster_Click" Content="Load Monster Repo"/>
+                <TextBlock x:Name="txtStatus" Margin="10,0,0,0"><Run Text="Not loaded"/></TextBlock>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" DockPanel.Dock="Bottom" Height="20">
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Height="20">
                 <Button x:Name="btnOpenPartyFile" Click="btnOpenPartyFile_Click" Content="Choose Party File"/>
                 <TextBlock x:Name="txtPartyName" Margin="10,0,0,0"/>
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" DockPanel.Dock="Bottom" Height="20">
+            <StackPanel HorizontalAlignment="Left"  Orientation="Horizontal" Height="20">
                 <Button x:Name="btnOpenEncounterFile" Click="btnOpenEncounterFile_Click" Content="Choose Encounter File"/>
                 <TextBlock x:Name="txtEncounterName" Margin="10,0,0,0"/>
             </StackPanel>

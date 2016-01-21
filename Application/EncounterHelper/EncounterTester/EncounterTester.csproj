@@ -47,52 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="SimulationData\Encounter\LostMines\Chapelle.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\CollapsedCavern.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\TempleDomathoin.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\NorthBarrack.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\KingGrol.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\ForgeOfSpell.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\Klarg.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\Cragmaw_Entrance.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\MineTunnel.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\WizardQuarter.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\Owlbear.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\PriseOtage.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\Test\GoblinTest.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="SimulationData\Encounter\Test\GoblinTest.json" />
     <None Include="SimulationData\MonsterRepository\Goblin.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="SimulationData\Player\Players.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="SimulationData\Encounter\LostMines\GoblinAmbush.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
