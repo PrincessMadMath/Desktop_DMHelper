@@ -5,14 +5,8 @@
         Title="DM Helper" Height="350" Width="525">
     <DockPanel  Margin="10">
 
-        <StackPanel HorizontalAlignment="Center" DockPanel.Dock="Right" Margin="0,0,0,10" Width="230">
-            <Button Name="btnGenerateEnconter" Click="btnGenerateEncounter_Click">Start</Button>
-            <Grid Height="250">
-                <ScrollViewer>
-                    <TextBlock Name="txtEncounterDescription" Margin="10,0,0,0">Description</TextBlock>
-                </ScrollViewer>
-            </Grid>
-
+        <StackPanel HorizontalAlignment="Center" DockPanel.Dock="Right">
+            <panels:EncounterSimulation></panels:EncounterSimulation>
         </StackPanel>
         <StackPanel DockPanel.Dock="Top">
             <panels:MonsterRepoLoader/>

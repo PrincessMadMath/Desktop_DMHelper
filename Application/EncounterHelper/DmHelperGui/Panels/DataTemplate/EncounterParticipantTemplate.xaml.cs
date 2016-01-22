@@ -12,26 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using DmHelperGui.ModelView;
-using EncounterHelper;
-using Microsoft.Win32;
-using System.IO;
-using DmHelperGui.Properties;
-using DmHelperGui.ViewLogic;
-using Helper;
-using Path = System.IO.Path;
 
-namespace DmHelperGui
+namespace DmHelperGui.Panels.DataTemplate
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EncounterParticipantTemplate.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EncounterParticipantTemplate : UserControl
     {
-        public MainWindow()
+        public EncounterParticipantTemplate()
         {
             InitializeComponent();
         }
     }
-
 }

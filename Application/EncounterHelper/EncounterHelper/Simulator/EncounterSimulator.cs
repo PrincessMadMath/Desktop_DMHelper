@@ -15,16 +15,9 @@ namespace EncounterHelper
             fusion.AddRange(players);
             fusion = fusion.OrderByDescending(x => x.Initiative).ToList();
 
-            var description = new StringBuilder();
+            var participants = fusion.Select(encounterParticipant => encounterParticipant.GetEncounterParticipant()).ToList();
 
-            foreach (var encounterParticipant in fusion)
-            {
-                description.AppendLine("------------------------------");
-                description.AppendLine(encounterParticipant.ToString());
-                description.AppendLine("------------------------------");
-            }
-
-            var simulation = new EncounterSimulation(){EncounterDescription = description.ToString()};
+            var simulation = new EncounterSimulation(){ParticipantsList = participants};
             return simulation;
         }
     }

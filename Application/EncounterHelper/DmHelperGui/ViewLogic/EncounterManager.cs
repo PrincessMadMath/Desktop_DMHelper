@@ -23,7 +23,7 @@ namespace DmHelperGui.ViewLogic
             }
         }
 
-        private EncounterInfoStarter _encounterInfo = new EncounterInfoStarter();
+        private readonly EncounterInfoStarter _encounterInfo = new EncounterInfoStarter();
 
         public void SetPartyPath(string path)
         {

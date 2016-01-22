@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="DmHelperGui.Panels.EncounterSimulation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:modelView="clr-namespace:DmHelperGui.ModelView;assembly=EncounterHelper"
+             xmlns:dataTemplate="clr-namespace:DmHelperGui.Panels.DataTemplate"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" DockPanel.Dock="Right" Margin="0,0,0,10" Width="230">
+            <Button Name="btnGenerateEnconter" Click="btnGenerateEncounter_Click">Start</Button>
+            <Grid  Height="250">
+                <ScrollViewer>
+                    <ListBox x:Name="peopleListBox" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch"
+                Foreground="Transparent" 
+                BorderBrush="Transparent" 
+                Background="Transparent" 
+                Grid.ColumnSpan="2">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <dataTemplate:EncounterParticipantTemplate Margin="4"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </ScrollViewer>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,4 +1,6 @@
-﻿namespace EncounterHelper
+﻿using DmHelperGui.ModelView;
+
+namespace EncounterHelper
 {
     public class PlayableCharacter : IEncounterParticipant
     {
@@ -9,6 +11,16 @@
         public int AC { get; set; }
 
         public int PassivePerception { get; set; }
+
+        public EncounterParticipant GetEncounterParticipant()
+        {
+            return new EncounterParticipant()
+            {
+                Name = Name,
+                AC = AC,
+                Initiative = Initiative
+            };
+        }
 
         public override string ToString()
         {

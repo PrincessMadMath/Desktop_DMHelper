@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using DmHelperGui.ModelView;
 
 namespace EncounterHelper
 {
@@ -15,6 +16,16 @@ namespace EncounterHelper
         public int AC { get; set; }
 
         public int Initiative { get; set; }
+
+        public EncounterParticipant GetEncounterParticipant()
+        {
+            return new EncounterParticipant()
+            {
+                Name = Name,
+                AC = AC,
+                Initiative = Initiative
+            };
+        }
 
         public List<DamageType> Vulnerabilities { get; set; }
 

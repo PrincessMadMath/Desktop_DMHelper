@@ -59,6 +59,7 @@
     <Compile Include="Factory\PlayerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\EncounterInfoStarter.cs" />
+    <Compile Include="ViewModel\EncounterParticipant.cs" />
     <Compile Include="ViewModel\EncounterSimulation.cs" />
   </ItemGroup>
   <ItemGroup>
