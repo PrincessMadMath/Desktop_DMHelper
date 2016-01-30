@@ -1,0 +1,15 @@
+﻿{
+    "monster_type": "thug",
+    "description": "thug",
+    "ac": 11,
+    "initiative_bonus": 1,
+    "hits_points_dice": "d8",
+    "hits_points_dice_count": 6,
+    "attacks": [
+        {
+            "name": "2xLong Sword",
+            "damage_type": "Slashing",
+            "damage_roll": "+4 1d8 +2"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+﻿{
+    "monster_type": "guard",
+    "description": "guard",
+    "ac": 12,
+    "initiative_bonus": 1,
+    "hits_points_dice": "d8",
+    "hits_points_dice_count": 3,
+    "attacks": [
+        {
+            "name": "Long Sword",
+            "damage_type": "Slashing",
+            "damage_roll": "+3 1d8 +2"
+        }
+    ]
+}

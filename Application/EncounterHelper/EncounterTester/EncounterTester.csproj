@@ -47,7 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="SimulationData\Encounter\PirateAttack.json" />
     <None Include="SimulationData\Encounter\Test\GoblinTest.json" />
+    <None Include="SimulationData\MonsterRepository\Mage.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SimulationData\MonsterRepository\guard.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SimulationData\MonsterRepository\thug.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SimulationData\MonsterRepository\Gladiator.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="SimulationData\MonsterRepository\Goblin.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

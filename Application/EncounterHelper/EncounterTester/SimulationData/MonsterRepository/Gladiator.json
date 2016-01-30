@@ -1,0 +1,20 @@
+﻿{
+    "monster_type": "gladiator",
+    "description": "gladiator",
+    "ac": 16,
+    "initiative_bonus": 2,
+    "hits_points_dice": "d8",
+    "hits_points_dice_count": 15,
+    "attacks": [
+        {
+            "name": "3x Spear",
+            "damage_type": "Piercing",
+            "damage_roll": "+7 2d6 +4"
+        },
+        {
+            "name": "3x Shield Bash",
+            "damage_type": "Bludgeoning",
+            "damage_roll": "+7 2d4 +4 (DC15 or prone)"
+        }
+    ]
+}
