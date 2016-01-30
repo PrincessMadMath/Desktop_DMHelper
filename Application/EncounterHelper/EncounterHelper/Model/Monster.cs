@@ -6,26 +6,14 @@ namespace EncounterHelper
 {
     public class Monster : IEncounterParticipant
     {
-        public string Name { get; set; }
+        public override string Name { get; set; }
+        public override int AC { get; set; }
+        public override int CurrentHitsPoints { get; set; }
+        public override int Initiative { get; set; }
 
         public string Description { get; set; }
 
-        public int CurrentHitsPoints { get; set; }
         public int MaximumHitsPoints { get; set; }
-
-        public int AC { get; set; }
-
-        public int Initiative { get; set; }
-
-        public EncounterParticipant GetEncounterParticipant()
-        {
-            return new EncounterParticipant()
-            {
-                Name = Name,
-                AC = AC,
-                Initiative = Initiative
-            };
-        }
 
         public List<DamageType> Vulnerabilities { get; set; }
 
@@ -35,22 +23,24 @@ namespace EncounterHelper
 
         public List<Attack> Attacks { get; set; }
 
-        public override string ToString()
-        {
-            StringBuilder attackCollection = new StringBuilder("\n");
-            if (Attacks != null)
-            {
-                Attacks.ForEach(x => attackCollection.AppendLine(x.ToString()));
-            }
 
-            var toString = string.Format(
-                            "Name: {0}" + "\n" +
-                            "AC: {1}" + "\n" +
-                            "Description: {2}" + "\n" +
-                            "Hits Points: {3}" + "\n" + 
-                            "Attacks: {4}"
-                            , Name, AC, Description, CurrentHitsPoints, attackCollection);
-            return toString;
-        } 
+
+        public override string GetDetails()
+        {
+            var builder = new StringBuilder();
+            builder.AppendLine($"Attacks: {listFormater(Attacks)}");
+            builder.AppendLine($"Vulnerabilities: {listFormater(Vulnerabilities)}");
+            builder.AppendLine($"Resistance: {listFormater(Resistances)}");
+            builder.AppendLine($"Imminuties: {listFormater(Immunities)}");
+            return builder.ToString();
+        }
+
+        private string listFormater<T>(List<T> list)
+        {
+            var formattedString = new StringBuilder();
+            list?.ForEach(x => formattedString.AppendLine(x.ToString()));
+            return formattedString.ToString();
+        }
+
     }
 }

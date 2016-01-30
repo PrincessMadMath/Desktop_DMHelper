@@ -1,7 +1,7 @@
 ﻿[
     {
         "name": "Goblin Overiden",
-        "initiative_bonus": 0,
+        "ac": 20,
         "monster_type": "goblin"
     },
     {

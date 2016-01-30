@@ -10,29 +10,50 @@
                     CornerRadius="5,5,5,5" 
                     Background="#FF626262" 
                     BorderBrush="#FFFFAC00" 
-                    Grid.ColumnSpan="3">
-        <StackPanel Orientation="Horizontal">
-            <TextBox HorizontalAlignment="Stretch" 
+                    HorizontalAlignment="Stretch">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" >
+                <TextBox HorizontalAlignment="Stretch" 
                     VerticalAlignment="Stretch" 
                     Text="{Binding Path=Name}" 
                     TextWrapping="Wrap" 
                     Margin="4,4,4,4" 
-                    Grid.ColumnSpan="1"/>
-            <TextBox HorizontalAlignment="Stretch" 
+                    />
+                <Label>AC:</Label>
+                <TextBox HorizontalAlignment="Stretch" 
                     VerticalAlignment="Stretch" 
                     Text="{Binding Path=AC}" 
                     TextWrapping="Wrap" 
-                    Grid.Column="1" 
                     Margin="4,4,4,4" 
-                    Grid.ColumnSpan="1"/>
-            <TextBox HorizontalAlignment="Stretch" 
+                    IsReadOnly="True"
+                    />
+                <Label>Id:</Label>
+                <TextBox HorizontalAlignment="Stretch" 
                     VerticalAlignment="Stretch" 
-                    Text="{Binding Path=Initiative}" 
                     TextWrapping="Wrap" 
-                    Grid.Column="1" 
                     Margin="4,4,4,4" 
-                    Grid.ColumnSpan="1"/>
-
+                    MinWidth="20"
+                    />
+                <Button 
+                    ToolTip="{Binding Path=Details}"
+                    Width="20">?</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label>HP:</Label>
+                <TextBox HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch" 
+                    Text="{Binding Path=CurrentHitsPoints}" 
+                    Margin="4,4,4,4" 
+                    />
+                <Label>Cond:</Label>
+                <ComboBox
+	                HorizontalAlignment="Left"
+	                Margin="10,10,0,0"
+	                VerticalAlignment="Top"
+	                Width="120"
+	                Loaded="ComboBox_Loaded"
+                />
+            </StackPanel>
         </StackPanel>
     </Border>
 </UserControl>

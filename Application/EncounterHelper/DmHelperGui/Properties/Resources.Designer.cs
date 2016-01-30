@@ -59,14 +59,5 @@ namespace DmHelperGui.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string MonsterRepoPath {
-            get {
-                return ResourceManager.GetString("MonsterRepoPath", resourceCulture);
-            }
-        }
     }
 }

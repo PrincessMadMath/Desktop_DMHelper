@@ -4,6 +4,6 @@ namespace DmHelperGui.ModelView
 {
     public class EncounterSimulation
     {
-        public List<EncounterParticipant> ParticipantsList { get; set; } 
+        public List<EncounterParticipantViewModel> ParticipantsList { get; set; } 
     }
 }

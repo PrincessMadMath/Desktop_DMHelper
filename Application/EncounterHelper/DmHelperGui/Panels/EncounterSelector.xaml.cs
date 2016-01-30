@@ -22,20 +22,42 @@ namespace DmHelperGui.Panels
         public EncounterSelector()
         {
             InitializeComponent();
-        }
 
-        private void btnOpenEncounterFile_Click(object sender, RoutedEventArgs e)
-        {
-            string path = FileDialogHelper.GetFileFromDialog("Choose an encounter file");
-            EncounterManager.Instance.SetEncounterPath(path);
-            txtEncounterName.Text = Path.GetFileName(path);
+            var playerFile = Properties.Settings.Default["PlayersPath"] as string;
+            SetPlayersToLoad(playerFile);
         }
 
         private void btnOpenPartyFile_Click(object sender, RoutedEventArgs e)
         {
             string path = FileDialogHelper.GetFileFromDialog("Choose a party file");
-            EncounterManager.Instance.SetPartyPath(path);
+
+            if (path != null)
+            {
+                SetPlayersToLoad(path);
+            }
+        }
+
+        private void SetPlayersToLoad(string path)
+        {
+            if (path == null)
+            {
+                return;
+            }
+
             txtPartyName.Text = Path.GetFileName(path);
+
+            Properties.Settings.Default["PlayersPath"] = path;
+            Properties.Settings.Default.Save();
+
+            EncounterManager.Instance.SetPartyPath(path);
+        }
+
+        private void btnOpenEncounterFile_Click(object sender, RoutedEventArgs e)
+        {
+            string path = FileDialogHelper.GetFileFromDialog("Choose an encounter file");
+
+            EncounterManager.Instance.SetEncounterPath(path);
+            txtEncounterName.Text = Path.GetFileName(path);
         }
     }
 }

@@ -28,7 +28,7 @@ namespace DmHelperGui.Panels
             InitializeComponent();
         }
 
-        readonly ObservableCollection<EncounterParticipant> participants = new ObservableCollection<EncounterParticipant>();
+        readonly ObservableCollection<EncounterParticipantViewModel> participants = new ObservableCollection<EncounterParticipantViewModel>();
 
 
         private void btnGenerateEncounter_Click(object sender, RoutedEventArgs e)
@@ -48,5 +48,7 @@ namespace DmHelperGui.Panels
             // Bind the items Collection to the List Box
             peopleListBox.ItemsSource = participants;
         }
+
+
     }
 }
