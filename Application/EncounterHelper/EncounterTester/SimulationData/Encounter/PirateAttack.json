@@ -1,39 +1,44 @@
 ﻿[
-    {
-        "name": "Mike",
-        "monster_type": "mage"
-    },
-    {
-        "name": "Alice la pirate",
-        "monster_type": "gladiator",
-        "hp": 160
-    },
-    {
-        "name": "Pirate Group #1",
-        "monster_type": "thug"
-    },
-    {
-        "name": "Pirate Group #2",
-        "monster_type": "thug"
-    },
-    {
-        "name": "Pirate Group #3",
-        "monster_type": "thug"
-    },
-    {
-        "name": "Pirate Group #4",
-        "monster_type": "thug"
-    },
-    {
-        "name": "Guard Group #1",
-        "monster_type": "guard"
-    },
-    {
-        "name": "Guard Group #2",
-        "monster_type": "guard"
-    },
-    {
-        "name": "Guard Group #3",
-        "monster_type": "guard"
-    }
+  {
+    "name": "Mike",
+    "monster_type": "mage",
+  },
+  {
+    "name": "Alice la pirate",
+    "monster_type": "gladiator",
+    "manual_hp": 160
+  },
+  {
+    "name": "Pirate Group #1 : Canon Group",
+    "monster_type": "thug"
+  },
+  {
+    "name": "Pirate Group #2",
+    "monster_type": "thug"
+  },
+  {
+    "name": "Pirate Group #3",
+    "monster_type": "thug"
+  },
+  {
+    "name": "Pirate Group #4",
+    "monster_type": "thug"
+  },
+  {
+    "name": "Guard Group #1",
+    "monster_type": "guard"
+  },
+  {
+    "name": "Guard Group #2",
+    "monster_type": "guard"
+  },
+  {
+    "name": "Guard Group #3",
+    "monster_type": "guard"
+  },
+  {
+    "name": "Ti-Lou",
+    "monster_type": "shark",
+    "manual_hp": 130
+  }
 ]

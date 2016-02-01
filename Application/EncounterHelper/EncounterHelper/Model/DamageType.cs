@@ -3,7 +3,7 @@
     public enum DamageType
     {
         Slashing,
-        Bludgening,
+        Bludgeoning,
         Piercing,
         Poison,
         Fire

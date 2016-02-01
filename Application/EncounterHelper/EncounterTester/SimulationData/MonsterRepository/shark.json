@@ -1,0 +1,15 @@
+﻿{
+    "monster_type": "shark",
+    "description": "shark",
+    "ac": 13,
+    "initiative_bonus": 0,
+    "hits_points_dice": "d12",
+    "hits_points_dice_count": 11,
+    "attacks": [
+        {
+            "name": "Bite",
+            "damage_type": "Piercing",
+            "damage_roll": "+9 3d10 +6 (adv si pas full life)"
+        }
+    ]
+}

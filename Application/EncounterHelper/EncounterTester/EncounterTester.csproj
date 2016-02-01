@@ -55,6 +55,9 @@
     <None Include="SimulationData\MonsterRepository\guard.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="SimulationData\MonsterRepository\shark.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="SimulationData\MonsterRepository\thug.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

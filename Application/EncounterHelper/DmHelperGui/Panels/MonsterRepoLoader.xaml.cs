@@ -64,9 +64,9 @@ namespace DmHelperGui.Panels
                 MonsterRepository.Load(_folderToLoad);
                 txtStatus.Text = "Load Complete";
             }
-            catch (Exception)
+            catch (Exception exception)
             {
-                txtStatus.Text = "Load fail";
+                txtStatus.Text = "Load fail" + exception.Message;
             }
         }
     }

@@ -18,10 +18,10 @@
         "passive_perception": 13
     },
     {
-        "name": "Vras",
-        "ac": 17,
-        "initiative_bonus": 3,
-        "passive_perception": 11
+        "name": "Paur",
+        "ac": 20,
+        "initiative_bonus": 5,
+        "passive_perception": 14
     },
     {
         "name": "Garret",
