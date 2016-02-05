@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace DmHelperGui.View.DataTemplate
+namespace DmHelperGui.View.EncounterSimulationTab.DataTemplate
 {
     /// <summary>
     /// Interaction logic for EncounterParticipantTemplate.xaml

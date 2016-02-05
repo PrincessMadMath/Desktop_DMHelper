@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using Controller;
 using Helper;
 
-namespace DmHelperGui.View
+namespace DmHelperGui.View.EncounterConfigurationTab
 {
     /// <summary>
     /// Interaction logic for EncounterSelector.xaml

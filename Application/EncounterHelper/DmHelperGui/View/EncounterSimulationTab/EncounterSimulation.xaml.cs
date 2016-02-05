@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using Controller;
 using ViewModel.Participant;
 
-namespace DmHelperGui.View
+namespace DmHelperGui.View.EncounterSimulationTab
 {
     /// <summary>
     /// Interaction logic for EncounterSimulation.xaml
