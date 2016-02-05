@@ -1,0 +1,13 @@
+﻿[
+    {
+        "name": "Goblin Overiden",
+        "ac": 20,
+        "monster_type": "goblin",
+        "ennemy_count": 10,
+        "hits_points_bonus": 100
+    },
+    {
+        "name": "Classic Goblin",
+        "monster_type": "goblin"
+    }
+]

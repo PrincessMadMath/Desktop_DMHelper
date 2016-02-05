@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="DmHelperGui.View.DataTemplate.EncounterParticipantTemplate"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             Height="Auto" Width="Auto">
+    <Border BorderThickness="2,2,2,2" 
+                    CornerRadius="5,5,5,5" 
+                    Background="#FF626262" 
+                    BorderBrush="#FFFFAC00" 
+                    HorizontalAlignment="Stretch">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" >
+                <TextBox HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch" 
+                    Text="{Binding Path=Name}" 
+                    TextWrapping="Wrap" 
+                    Margin="4,4,4,4" 
+                    />
+                <Label>AC:</Label>
+                <TextBox HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch" 
+                    Text="{Binding Path=AC}" 
+                    TextWrapping="Wrap" 
+                    Margin="4,4,4,4" 
+                    IsReadOnly="True"
+                    />
+                <Label>Id:</Label>
+                <TextBox HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch" 
+                    TextWrapping="Wrap" 
+                    Margin="4,4,4,4" 
+                    MinWidth="20"
+                    />
+                <Button 
+                    ToolTip="{Binding Path=Details}"
+                    Width="20">?</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label>HP:</Label>
+                <TextBox HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch" 
+                    Text="{Binding Path=CurrentHitsPoints}" 
+                    Margin="4,4,4,4" 
+                    />
+                <Label>Cond:</Label>
+                <ComboBox
+	                HorizontalAlignment="Left"
+	                Margin="10,10,0,0"
+	                VerticalAlignment="Top"
+	                Width="120"
+	                Loaded="ComboBox_Loaded"
+                />
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

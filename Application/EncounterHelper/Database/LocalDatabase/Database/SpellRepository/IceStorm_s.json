@@ -1,0 +1,9 @@
+﻿{
+    "spell_name": "ice_storm",
+    "casting_time": "Action",
+    "level" :  4,
+    "range": 300,
+    "components": "V, S, M",
+    "duration": "Instantaneous",
+    "description": "20-foot radius, Dext saving Throw for ½, 2d8 bludheoning + 4d6 cold, terrain is now difficult"
+}

@@ -1,0 +1,46 @@
+﻿{
+    "monster_type": "mage",
+    "description": "Spell: DC14 +6",
+    "ac": 15,
+    "initiative_bonus": 2,
+    "hits_points_dice": "d8",
+    "hits_points_dice_count": 9,
+    "attacks": [
+        {
+            "name": "1x-5 Cone of cold",
+            "damage_type": "Slashing",
+            "damage_roll": "DC Const, 60foot cone, 8d8 of cold"
+        },
+        {
+            "name": "3-4 Ice Storm",
+            "damage_type": "Slashing",
+            "damage_roll": "Range 300feet, 40 radius DC Dext, 2d8 blue + 4d6 cold -> difficult terrain"
+        },
+        {
+            "name": "3x Greater Invisibility",
+            "damage_type": "Slashing",
+            "damage_roll": "Up to 1min"
+        },
+        {
+            "name": "3x-3 Counter Spell",
+            "damage_type": "Slashing",
+            "damage_roll": "1 Reaction, interrupt process"
+        },
+        {
+            "name": "3x-3 Fireball",
+            "damage_type": "Slashing",
+            "damage_roll": "150feet + 20-foot. 8d6"
+        },
+        {
+            "name": "3x-3 Fly",
+            "damage_type": "Slashing",
+            "damage_roll": "fly up to 10mins"
+        },
+        {
+            "name": "3x Magic Missile",
+            "damage_type": "Slashing",
+            "damage_roll": "3x 1d4 + 1"
+        }
+    ],
+    "spells": ["ice_storm"]
+}

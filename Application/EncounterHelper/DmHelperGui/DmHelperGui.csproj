@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DmHelperGui</RootNamespace>
     <AssemblyName>DmHelperGui</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,12 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -54,13 +51,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Panels\DataTemplate\EncounterParticipantTemplate.xaml.cs">
+    <Compile Include="View\DataTemplate\EncounterParticipantTemplate.xaml.cs">
       <DependentUpon>EncounterParticipantTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\EncounterSimulation.xaml.cs">
+    <Compile Include="View\EncounterSimulation.xaml.cs">
       <DependentUpon>EncounterSimulation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewLogic\EncounterManager.cs" />
+    <Compile Include="View\SpellDatabaseLoader.xaml.cs">
+      <DependentUpon>SpellDatabaseLoader.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,29 +72,33 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Panels\DataTemplate\EncounterParticipantTemplate.xaml">
+    <Page Include="View\DataTemplate\EncounterParticipantTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\EncounterSelector.xaml">
+    <Page Include="View\EncounterSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\EncounterSimulation.xaml">
+    <Page Include="View\EncounterSimulation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\MonsterRepoLoader.xaml">
+    <Page Include="View\SpellDatabaseLoader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\MonsterDatabaseLoader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Panels\EncounterSelector.xaml.cs">
+    <Compile Include="View\EncounterSelector.xaml.cs">
       <DependentUpon>EncounterSelector.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\MonsterRepoLoader.xaml.cs">
-      <DependentUpon>MonsterRepoLoader.xaml</DependentUpon>
+    <Compile Include="View\MonsterDatabaseLoader.xaml.cs">
+      <DependentUpon>MonsterDatabaseLoader.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -125,13 +128,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EncounterHelper\EncounterHelper.csproj">
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{C0A37C69-A204-4DEB-BAFE-6911E1C102CB}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EncounterHelper\EncounterSimulator.csproj">
       <Project>{706FE8E5-A697-4ADF-8E64-312855F10D98}</Project>
-      <Name>EncounterHelper</Name>
+      <Name>EncounterSimulator</Name>
     </ProjectReference>
     <ProjectReference Include="..\Helper\Helper.csproj">
       <Project>{08a71ba5-c862-46d5-9ef8-abd9571c9242}</Project>
       <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{B645CD7B-DFB6-49E9-B8FF-A537E38167F4}</Project>
+      <Name>ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

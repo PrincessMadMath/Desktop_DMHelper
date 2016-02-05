@@ -46,5 +46,17 @@ namespace DmHelperGui.Properties {
                 this["PlayersPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SpellDatabasePath {
+            get {
+                return ((string)(this["SpellDatabasePath"]));
+            }
+            set {
+                this["SpellDatabasePath"] = value;
+            }
+        }
     }
 }
